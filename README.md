@@ -71,10 +71,10 @@ Xception model received an accracy of `83%` on the Validation set.
 3. `pip install scipy`
 4. `pip install sklearn`
 5. `pip install pandas`
-6. `pip install numpy
+6. `pip install numpy`
 7. `pip install jupyter`
 
-I trained the neural net in AWS using the `p2.xlarge` instance, I have created an AMI which comes with all of the above dependencies installed. AMI-ID: `ami-0337b3fba4a212c7f`, make sure you've selected the `Ireland` region if you decide to use this AMI. 
+Neural Net was trained in AWS using the `p2.xlarge` instance, I have created an AMI which comes with all of the above dependencies installed. AMI-ID: `ami-0337b3fba4a212c7f`, make sure you've selected the `Ireland` region if you decide to use this AMI. 
 
 #### Project Structure:
 1. `src/data/dataloader.py`: Filters out normal and abnormal x-ray images and adds them to their own directories for keras    `ImageDataGenerator.flow_from_directory()`. For example `train/normal/` and `train/abnormal/`
